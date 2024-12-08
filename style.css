@@ -12,7 +12,7 @@ video{
     margin-left: 25vw;
     /* top: 3.5vw;  */
     /* height: 0%; */
-    filter: blur(5vw);
+    filter: blur(3vw);
     border-radius: 100% ;
 }
 .cont{
