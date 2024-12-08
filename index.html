@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normal.css">
+    <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>Home</title>
+</head>
+<body id="body">
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="logo"><img src="./img/Cnopca_serva_v_uglu.png" alt="Mine"></div>
+                <div></div>
+                <div><a href="#" class="now plus1 plus">Home</a></div>
+                <div><a href="information.html" class="info plus">Information</a></div>
+                <div><a href="whitelist.html" class="plus2 plus">Whitelist</a></div>
+                <div><a href="rules.html" class="rul plus">Rules</a></div>
+                <div><a href="https://docs.google.com/forms/d/1GbWUX8a0gFLTG6EpUyjECv27mVaMeVPrUql2-qMYmzo/edit" target="_blank" class="plus2 plus">Complait</a></div>
+                <div><a href="https://discord.gg/pC43MXWaYH" target="_blank"><img src="./img/dc.png" alt="dc"></a></div>
+                <div><a href="https://t.me/AtmoMine/1" target="_blank"><img src="./img/tg.png" alt="tg"></a></div>
+            </div>
+            <video src="./img/givHome.mp4" type="video/mp4" autoplay muted loop></video>
+        </nav>
+    </header>
+    <main>
+        <img src="./img/Minecraft Grass Cube.png" alt="" class="cub1">
+        <img src="./img/Minecraft Grass Cube.png" alt="" class="cub2">
+        <img src="./img/Crafting Table.png" alt="" class="cub3">
+        <div class="cont">
+            <img src="./img/mineclub_home.png" alt="MINECLUB" class="cent">
+            <h3>Вітаємо тебе на нашому сервері та в клубі !</h3>
+            <p class="text">Ми найатмосферніший український сервер та доказ того, що все можливе !</p>
+            <div class="bloc">Нові друзі</div>
+            <div class="bloc">Крутий контент</div>
+            <div class="bloc">Івенти з признаками</div>
+            <p class="text2">Все це і не тільки чекає на тебе на нашому атмосферному сервері ;)</p>
+        </div>
+    </main>
+    <footer>
+        <div class="hre">                
+            <img class="back" src="./img/Cnopca_serva_v_uglu.png" alt="Mine">
+            <a href="https://discord.gg/pC43MXWaYH" target="_blank"><img src="./img/dc.png" alt="dc"></a>
+            <a href="https://t.me/AtmoMine/1" target="_blank"><img src="./img/tg.png" alt="tg"></a>
+            <p class="textF">2024 The site is the property of MineClub. All rights reserved.</p>
+            <p class="textF">Not an official Minecraft product. We are in no way affiliated with or endorsed by Mojang Synergies AB, Microsoft Corporation or other rightsholders.</p>
+        </div>
+    </footer>
+    <script>
+        let video = document.querySelector('video');
+        
+        // Set the default playing speed
+        video.defaultPlaybackRate = 0.5
+        
+        // Loading the video after setting 
+        video.load();
+        
+        function increase() {
+        
+            // Increasing the playing speed by 1
+            video.playbackRate += 1;
+        }
+        
+        function decrease() {
+        
+            // Decreasing the playing speed by 1
+            if (video.playbackRate > 1)
+                video.playbackRate -= 1;
+        }
+    </script>
+    </body>
+</html>

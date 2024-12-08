@@ -1,0 +1,132 @@
+.box{
+    display: flex;
+    /* grid-template-columns:12fr 557px; */
+    /* position: absolute;  */
+    top: 350px;   
+    width:42%;
+
+}
+
+.obg{
+    position: relative;
+    left: 3vw;
+    bottom: 5vw;    
+    padding: 2.3vw 2vw 2vw 2vw;
+    box-sizing: border-box;
+    bottom:  4vw;
+
+    margin-left: 3.5vw;
+
+    background: linear-gradient(330.96deg, rgba(217, 217, 217, 0.13) 0%, rgba(255, 255, 255, 0.13) 78.31%);
+    border: 1px solid rgba(217, 217, 217, 0.15);
+    backdrop-filter: blur(2.5px);
+    border-radius: 1vw;
+
+}
+.line{
+    position: absolute;
+    width: 1vw;
+    height: 100%;
+    left: -0.21vw;
+    top: -0.00vw;
+
+    background: linear-gradient(216.05deg, #8F0B9B 14.04%, #3109B4 70.51%);
+    border-radius: 3.5vw 0px 0px 3.5vw;
+
+}
+.textC{
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4vw;
+
+}
+.margin{
+    margin-bottom:3%;
+}
+li{
+    margin-top: 0.5%;
+    font-size: 1.3vw;
+}
+.textColor{
+    color: #FFFFFF;
+}
+.textColor1{
+    color: #C5BBBB;
+}
+.marg{
+    margin-top: 2vw;
+}
+.box1{
+    display: grid;
+}
+.information1{
+    margin-top: 7vw;
+    display: flex;
+}
+.box1{
+    margin-right: 20%;
+}
+
+.icon3{
+    width: 3.6vw;
+    
+}
+.rules{
+    width: 20vw;
+}
+
+.center{
+    text-align: center;
+}
+
+.bacra{
+    position: absolute;
+    box-sizing: border-box;
+    width: 20vw;
+    height: 5.5vw;
+
+    background: #0F0F2D;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: #0F0F2D;
+    border-radius: 2vw;
+}
+
+
+.img1{
+    width: 16%;
+    position: absolute;
+    top: 0.8vw;
+}
+.center{
+    text-align: center;
+}
+.ruletext{
+    color: #C5BBBB;
+    list-style-type: none;
+}
+.ruletext>li{
+    margin-top: 2.5%;
+    font-size: 1.3vw;
+}
+.white{
+    color: white;
+    font-weight: 500;
+}
+@media (max-width: 1027px){
+    .obg{
+        height: 100%;
+        width: 84vw;
+
+    }
+}
+@media (min-width: 1028px){
+    .obg{
+        width: 84vw;
+        height: 100%;
+    }
+}
+
+footer{
+    margin-top: 4vw;
+}
