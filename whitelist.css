@@ -196,7 +196,10 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: #0F0F2D;
     border-radius: 2vw;
+    transition-property: all;
+    transition: all ease 1s;
 }
+
 
 .bacra1{
     top: 15vw;
@@ -204,12 +207,6 @@
     padding-top:0.4vw;
     padding-left:2vw;
     padding-top: 1.2vw;
-}
-.bacra1:hover{
-    animation: anim .8s forwards;
-}
-.bacra2:hover{
-    animation: anim .8s forwards;
 }
 .bacra2{
     top: 22vw;
@@ -219,6 +216,12 @@
     padding-top: 1.3vw;
 }
 
+.bacra1:hover{
+    transform: translateX(1.2vw);
+}
+.bacra2:hover{
+    transform: translateX(1.2vw);
+}
 a{
     text-decoration: none;
 }
@@ -246,10 +249,7 @@ a{
     top: 0.8vw;
 }
 
-@keyframes anim {
-    0% { margin-left: 0; }
-    100% {margin-left: 1vw; }
-  }
+
 @media (max-width:370px){
     .bacra{
         top: 90px;
