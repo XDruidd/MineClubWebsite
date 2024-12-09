@@ -205,6 +205,12 @@
     padding-left:2vw;
     padding-top: 1.2vw;
 }
+.bacra1:hover{
+    animation: anim .8s forwards;
+}
+.bacra2:hover{
+    animation: anim .8s forwards;
+}
 .bacra2{
     top: 22vw;
     left: 51vw;
@@ -212,6 +218,7 @@
     width: 23vw;
     padding-top: 1.3vw;
 }
+
 a{
     text-decoration: none;
 }
@@ -239,7 +246,10 @@ a{
     top: 0.8vw;
 }
 
-
+@keyframes anim {
+    0% { margin-left: 0; }
+    100% {margin-left: 1vw; }
+  }
 @media (max-width:370px){
     .bacra{
         top: 90px;
