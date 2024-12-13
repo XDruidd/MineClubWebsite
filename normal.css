@@ -9,8 +9,8 @@ body{
     width: 0; }
 .navbar{
     display: grid;
-    grid-template-columns:0px 2fr 0.65fr 1fr 0.8fr 0.6fr 1fr 0.3fr 1.5fr;    
-    padding-top: 3%;
+    grid-template-columns:0fr 1.4fr 0.65fr 1fr 0.8fr 0.6fr 1fr 0.3fr 0.3fr 11vw;    
+    padding-top: 2.5vw;
 }
 .now{
     color: #C91DBE;
@@ -25,7 +25,7 @@ nav>div>div>a{
     font-weight: 500;
     /* font-size: 24px; */
     font-size: 1.8vw;
-    line-height: 36px;
+    line-height: 2.5vw;
     letter-spacing: -0.05em;
 }
 nav>div>div>a>img{
@@ -128,7 +128,7 @@ footer{
 @media (max-width:700px){
     .navbar{
         display: grid;
-        grid-template-columns:0px 2fr 0.65fr 1fr 0.8fr 0.6fr 1fr 0.3fr 1.5fr;    
+        grid-template-columns:0fr 1.4fr 0.65fr 1fr 0.8fr 0.6fr 1fr 0.3fr 0.3fr 11vw;    
         padding-top: 0.5vw;
     }
     .logo{
