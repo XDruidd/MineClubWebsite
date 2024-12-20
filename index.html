@@ -14,16 +14,33 @@
     <header>
         <nav>
             <div class="navbar">
+                <div class="none_bloc navig_fon">
+                    <img id="clic" class="none_bloc" src="./img/Menu.png" alt="menu">
+                    <div id="navigation" class="clic1">
+                        <div class="nav_fon fon_nav_tel">
+                            <div class="none_bloc nav_fon"><a href="#" class="retreat now plus1 plus"><img src="./img/Exterior.png" alt="">Home</a></div>
+                            <div class="none_bloc nav_fon"><a href="information.html" class="retreat info plus"><img src="./img/Search_Property.png" alt="">Information</a></div>
+                            <div class="none_bloc nav_fon"><a href="whitelist.html" class="retreat plus2 plus"><img src="./img/Hand_Box.png" alt="">Whitelist</a></div>
+                            <div class="none_bloc nav_fon"><a href="rules.html" class="retreat rul plus"><img src="./img/Shield2.png" alt="">Rules</a></div>
+                            <div class="none_bloc nav_fon"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfVVL2PZNEGtz4VTpBpmHdUvyMVyoWwxTo6Mgzt0qy5K6zchA/viewform?usp=dialog" target="_blank" class="retreat plus2 plus"><img src="./img/Rules.png" alt="">Complait</a></div>
+                        </div>
+                    </div>        
+                </div>
+
                 <div class="logo"><img src="./img/Cnopca_serva_v_uglu.png" alt="Mine"></div>
                 <div></div>
-                <div><a href="#" class="now plus1 plus">Home</a></div>
-                <div><a href="information.html" class="info plus">Information</a></div>
-                <div><a href="whitelist.html" class="plus2 plus">Whitelist</a></div>
-                <div><a href="rules.html" class="rul plus">Rules</a></div>
-                <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfVVL2PZNEGtz4VTpBpmHdUvyMVyoWwxTo6Mgzt0qy5K6zchA/viewform?usp=dialog" target="_blank" class="plus2 plus">Complait</a></div>
-                <div><a href="https://discord.gg/pC43MXWaYH" target="_blank"><img src="./img/dc.png" alt="dc"></a></div>
-                <div><a href="https://t.me/AtmoMine/1" target="_blank"><img src="./img/tg.png" alt="tg"></a></div>
-                <div><a href="http://51.75.57.34:25666/#world:-1:0:0:7593:0:0:0:0:perspective" target="_blank"><img src="./img/Map Marker.png" alt="Map"></a></div>
+                <div id="display">
+                    <div><a href="#" class="retreat now plus1 plus">Home</a></div>
+                    <div><a href="information.html" class="retreat info plus">Information</a></div>
+                    <div><a href="whitelist.html" class="retreat plus2 plus">Whitelist</a></div>
+                    <div><a href="rules.html" class="retreat rul plus">Rules</a></div>
+                    <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSfVVL2PZNEGtz4VTpBpmHdUvyMVyoWwxTo6Mgzt0qy5K6zchA/viewform?usp=dialog" target="_blank" class="retreat plus2 plus">Complait</a></div>
+                </div>
+                <div class="nav_icon">
+                    <div><a href="https://discord.gg/pC43MXWaYH" target="_blank"><img src="./img/dc.png" alt="dc" class="dc"></a></div>
+                    <div><a href="https://t.me/AtmoMine/1" target="_blank"><img src="./img/tg.png" alt="tg" class="tg"></a></div>
+                    <div><a href="https://atmocraftmap.dynmap.me/#world:-1:0:0:1500:0:0:0:0:perspective" target="_blank"><img src="./img/Map Marker.png" alt="Map" class="map1"></a></div>
+                </div>
             </div>
             <video src="./img/givHome.mp4" type="video/mp4" autoplay muted loop></video>
         </nav>
@@ -51,6 +68,8 @@
             <p class="textF">Not an official Minecraft product. We are in no way affiliated with or endorsed by Mojang Synergies AB, Microsoft Corporation or other rightsholders.</p>
         </div>
     </footer>
+    <script src="main.js"></script>
+
     <script>
         let video = document.querySelector('video');
         

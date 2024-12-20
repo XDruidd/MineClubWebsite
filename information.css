@@ -19,10 +19,9 @@ main{
     width: 50%;
     height: 100%;
 
-    right: 10px;
-    bottom: 20px; 
+    right: 0.6vw;
+    bottom: 1.2vw; 
     transform: rotate(20.08deg);
-    
 }
 .grid{
     display:grid;
@@ -202,6 +201,12 @@ main{
     width: 6vw; /* Фиксированная ширина */
     height: 4vw; /* Фиксированная высота */
     margin-left: 1vw; /* Отступ между текстом и иконкой */
+
+    -webkit-box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
+
+    box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
+
 }
 
 .textC{
@@ -262,6 +267,7 @@ main{
     height: 3vw;
     position: relative;
     left: 52%;
+    
 }
 .RGB2{
     background: linear-gradient(270.07deg, #FFFFFF 0.06%, #8A1DC9 99.94%);
@@ -281,19 +287,190 @@ main{
     -webkit-text-fill-color: transparent;
     background-clip: text;
 } 
-@media (max-width: 429px){
-
-    .rgbText1 {
+.none_hr{
+    display: none;
+}
+.display_none{
+    display: none;
+}
+@media (max-width: 700px){
+    .display_none{
+        display: block;
+    }
+    .head_m{
+        display: none;
+    }
+    .img{
+        background-image: url(./img/Union2.png);
+        background-size: 100%;
+        width: 60%;
+        left: 2.2vw;
+        padding-left: 10vw;
+        padding-top: 44vw;
+    }
+    .img2{
+        font-size: 1.2rem;
+        width: 22%;
+        left: 23.5%;
+        top: 61%;
+        background-color: white;
+        border-radius: 4vw;
+        padding: 0.5vw;
+        
+    }
+    .text{
+        font-size: 3.6vw;
+    }
+    .cont1{
+        top: 2vw;
+        left: 5.5vw;
+    }
+    .cont2{
+        top: 17.5vw;
+        left: 50vw;
+    }
+    .grid{
+        display: block;
+        
+    }   
+    .ord{
+        display: flex;
+        flex-direction: column;
+    }
+    .information{
+        display: flex;
+        order: 2;
+    }
+    .information1{
+        display: flex;
+        order: 1;
+    }   
+    .boxO1{order: 2; margin-top: 160vw;}
+    .boxO2{order: 1;}
+    .boxO3{order: 2; margin-top: 12vw;}
+    .boxO4{order: 1; margin-top: 60vw;}
+    
+    .NavObgText{
+        text-align: center;
+        font-size: 6vw;
         position: relative;
-        /* margin-top: 1vw; */
+        top: 1vw;
+    }
+    .none_hr{
+        display: block;
+        margin-left: 16vw;
+        margin-right: 10vw;
+        margin-bottom: 3vw;
+        background-color:hsl(240, 9%, 39%);
+    }
+    .icon3{
+       width: 15vw;
+    }
+    .rgbText1{
+        font-size: 6vw;
+    }
+    .obg{
+        width: 92vw;
+        height: 95%;
+        padding: 5vw;
+        padding-top: 8vw;   
+        padding-right: 4vw;   
+        padding-left: 9vw;
+        border-radius: 10vw;
+    }
+    .textC{
+        padding-right: 9vw;   
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+    .marg{
+        margin-top: 4vw;
+    }
+    .img5, .img3{
+        width: 8vw;
+        height: 8vw;
+        left: 1vw;
+    }
+    .fon5,.fon3{
+        border-radius: 2vw;
+        padding: 3.4vw;
+        padding-right: 5vw;
+    }
+    .radius{
+        width: 10vw;
+    }
+    .rgbText1{  
+        right: 10vw;
+    }
+    .right{
+        right: 3vw;
+    }
+    .right1{
+        right: 7vw;
+    }
+    .information1{
+        display: grid;
+    }
+    .box1{
+        gap: 10vw;
+    }    
+    .iconW{
+        order: 3;
+    }
+    .right3{
+        order: 2;
+        left: 18vw;
+    }
+    .Shield{
+        order: 1;
+    }
+    .on{
+        width:4vw;
+        top: 0.8vw;
+    }
+    .fox{
+        width: 0px;
+        /* padding-top: 200vw; */
+        z-index: 1;
+    }
+    .fox1{
+        position: relative; 
+
+        width: 33vw;
+        height: 45vw;
+
+        left: 27.5vw;
+        transform: rotate(290deg);    }
+
+    .fon{
+        position: relative;
+        left: -98.1vw;
+        bottom: 117vw;
+        padding:56vw 4vw 0vw 108vw;
+        border-radius: 5vw;
+    }
+    .fon1{
+        padding:0vw 3vw 0vw 3vw;
+        width: 90vw;
+        height: 110vw;
+    }
+    .mascot{
+        width: 64%;
+        right: 19.6vw;
+    }
+    .text3{
+        font-size: 5vw;
+        top: 6vw;
+        left: -43vw;
+    }
+    .line1{
+        width: 20%;
+        top: 10vw;
+        left: -62vw;
+        
     }
 }
-@media (max-width: 1027px){
-    .obg{   
-        height: 100%;
-    }
-}
-@media (min-width: 1028px){
+@media (min-width: 701px){
     .obg{   
         /* width: 31.7vw; */
         height: 37.7vw;

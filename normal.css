@@ -9,14 +9,18 @@ body{
     width: 0; }
 .navbar{
     display: grid;
-    grid-template-columns:0fr 1.4fr 0.65fr 1fr 0.8fr 0.6fr 1fr 0.3fr 0.3fr 11vw;    
-    padding-top: 2.5vw;
+    grid-template-columns:0fr 1.7fr 1fr 1fr 0fr;    
+    padding-top: 3.5vw;
 }
+.navbar>div{
+    display: flex;    
+}
+
 .now{
     color: #C91DBE;
 }
 
-nav>div>div>a{
+nav>div>div>div>a,nav>div>div>div>div>div>a{
     font-family: 'Kanit';
     font-style: normal;
     color: white;
@@ -28,7 +32,17 @@ nav>div>div>a{
     line-height: 2.5vw;
     letter-spacing: -0.05em;
 }
-nav>div>div>a>img{
+/* nav>div>div>div>div>div>img{
+    width: 2vw;
+    height: 2vw;
+} */
+.retreat{
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    /* padding-right: 2vw; */
+
+}
+nav>div>div>div>a>img{
     width: 2.45vw;
 }
 
@@ -38,9 +52,11 @@ nav>div>div>a>img{
     /* display: inline-block;  */
     border-radius:10%;
     padding: 0.25vw 1.4vw 0.25vw 1.4vw;
+    margin-left: 1.1vw;
+    margin-right: 1.1vw;
     position: relative;
-    right: 1.4vw;
-    bottom: 0.01vw;
+    /* right: 1.4vw; */
+    bottom: 0.03vw;
     text-align: center;
     border-radius: 35% / 100%;
 
@@ -58,8 +74,12 @@ nav>div>div>a>img{
 .info:hover{
     border-radius: 35% / 110%;    
 }
-
-
+.nav_icon{
+    margin: 0 5vw 0 5vw;
+}
+.nav_icon>div{
+    padding: 0 1vw 0 1vw;
+}
 .logo{
     position: relative;
     bottom: 2.26vw;
@@ -68,11 +88,12 @@ nav>div>div>a>img{
     width: 5.32vw;
     height:  5.32vw;
     padding-left: 0.3vw;
-    padding-top: 0.314vw;
+    padding-top: 0.354vw;
     border-radius: 30%;
 }
 .logo>img{
     width: 5vw;
+    height: 5vw;
 }
 html, body {
     height: 100%; /* Обеспечиваем, что body занимает всю высоту экрана */
@@ -125,14 +146,186 @@ footer{
     color: rgba(255, 255, 255, 0.7);
     
 }
+
+#navigation{
+    display: none;
+}
+@media (min-width:701px){
+    .none_bloc{
+        display: none;
+    }
+    .nav_fon{
+        width: 1.88vw;
+        height: 1.88vw;
+    }
+}
+
 @media (max-width:700px){
+    header{
+        margin-bottom: 10vw;
+    }
+    video{
+        top:44vw;
+    }
     .navbar{
         display: grid;
-        grid-template-columns:0fr 1.4fr 0.65fr 1fr 0.8fr 0.6fr 1fr 0.3fr 0.3fr 11vw;    
-        padding-top: 0.5vw;
+        grid-template-columns:0fr 0fr 0fr 10fr;    
+        padding-top: 1.5vw;
     }
     .logo{
+        position:relative;
+        top: 2vw;
+        left: 77vw;
+        background-color: hsl(274, 69%, 38%);
+        width: 11.32vw;
+        height: 11.32vw;
+        padding-left: 0.3vw;
+        padding-top: 0.354vw;
+        border-radius: 30%;
+    }
+    .logo>img {
+        width: 11vw;
+        height: 11vw;
+    }
+    #display{
+        display: none;
+    }
+    #clic{
+        width: 5vw;
+        height: 5vw;
+        padding-top: 3.8vw;
+        padding-left: 3vw;
+    }
+    .navbar>div>div>div>div>a>img{
+        width: 8.1vw;
         position: relative;
-        top: 1.26vw;
+        top: 2vw;
+        right: 3vw;
+    
+    
+
+        background: rgb(42, 40, 55);
+        border-radius: 1.5vw;
+        padding:0 1vw 0 1vw ;
+
+
+
+    }
+    .navbar>div>div>div>div>a{
+        position: relative;
+        font-size: 5.5vw;
+        padding-top: 3.0vw;
+        padding-bottom: 3.0vw;
+
+    }
+    .navbar>div>div>div>div{
+        padding-top: 1vw;
+        padding-bottom: 1vw;
+
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        
+        position: relative;
+        bottom:5vw;
+    }
+    .nav_icon{
+        box-sizing: border-box;
+        padding: 0px;
+        margin-top: 2.3vw;
+        position: absolute;
+        height: 8vw;
+        width: 25.7vw;
+        /* width: 107px; */
+        /* height: 32px; */
+        left: 6vw;
+        /* top: 0px; */
+        border: 0.0001vw solid #FFFFFF;
+        border-radius: 2.58vw;
+    }
+    .nav_icon>div>a>img{
+        position:absolute;
+        top: 10%;
+        text-align: center;
+        width: 5.8vw;
+    }
+    .tg{
+        right: 2vw;
+    }
+    .map1{
+        right: 17.5vw;
+    }
+    .dc{
+        right: 9.55vw;
+    }
+    .fon_nav_tel{
+        padding: 5vw;
+        position: fixed;
+         
+    box-sizing: border-box;
+
+        position: absolute;
+        width:60vw;
+        height: 70vw;
+        top: 15vw;
+
+        background: #0F0F2D;
+        border: 1px solid rgba(217, 217, 217, 0.25);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+        
+        left: 20%;
+        display: block;
+        
+                
+    }
+    .navigation{
+        z-index:99999999;
+
+    }
+    #navigation{
+        position:fixed;
+        top:0vw;
+        background-color: white;
+        height: 100%;
+        padding:50%; 
+        padding-bottom:100%;
+        z-index:99999999;
+        
+        background: linear-gradient(330.96deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 78.31%);
+        backdrop-filter: blur(7px);
+    }
+    .plus:hover{
+        width: 6.7vw;
+        height: 6.7vw;  
+        background: none;
+        border: none;
+        left: 1.1vw;
+        margin-left: 0vw;
+        bottom: 0vw;
+        padding: 0vw 1.4vw 0vw 1.4vw;
+
+        margin: 0px;
+    }
+    footer{
+        margin-top:50%;
+        background-repeat:round;
+        padding:2vw;
+    }
+    .hre>img{
+        border-radius: 100%;
+    }
+    .hre>img,.hre>a>img{
+        width: 6.7vw;
+        height: 6.7vw;   
+    }
+    .textF{
+        font-size: 3vw;
+        line-height: 3vw;
+    }
+    .now,.now:hover{
+        background: linear-gradient(270.75deg, #FFFFFF 5.23%, #8A1DC9 99.74%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 }

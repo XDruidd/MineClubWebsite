@@ -9,7 +9,7 @@
 
 .obg{
     position: relative;
-    left: 3vw;
+    left: 2.5vw;
     bottom: 5vw;    
     padding: 2.3vw 2vw 2vw 2vw;
     box-sizing: border-box;
@@ -113,14 +113,28 @@ li{
     color: white;
     font-weight: 500;
 }
-@media (max-width: 1027px){
+@media (max-width: 700px){
     .obg{
         height: 100%;
-        width: 84vw;
-
+        width: 88vw;
+        border-radius: 2.4vw;
+    }
+    .line{
+        padding-left: 0.7vw;
+    }
+    .rules{
+        width: 80%;
+        padding: 5vw;
+    }
+    .textC{
+        padding-left:2vw;
+        font-size: 5vw;
+    }
+    li,.ruletext>li{
+        font-size: 4vw;
     }
 }
-@media (min-width: 1028px){
+@media (min-width: 701px){
     .obg{
         width: 84vw;
         height: 100%;

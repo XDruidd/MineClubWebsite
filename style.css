@@ -107,6 +107,10 @@ h3{
     height: 1.8vw;
     left: 3.6vw;
     top: 6.6vw;
+    
+    -webkit-box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
 
     background: linear-gradient(90deg, rgba(106, 30, 164, 0.45) 0%, rgba(53, 10, 179, 0.45) 100%);
     border-radius: 0.55vw;
@@ -127,4 +131,80 @@ h3{
 }
 footer{
     margin-top: 15.9vw;
+}
+@media (max-width:700px){
+    .cont{
+        width:90%;
+        height:120vw;
+        border-radius:4vw;
+        background: linear-gradient(330.96deg, rgba(217, 217, 217, 0.13) 0%, rgba(255, 255, 255, 0.13) 78.31%);
+
+        backdrop-filter: blur(0.5vw);
+
+    }
+    .cent{
+        width:90%;
+        margin-top:3%;
+        margin-left:-1%;
+    }
+    h3{
+        width: 60vw;
+        height: 2vw;
+        left: 7vw;
+        top: 20vw;
+        
+        font-size: 4.6vw;
+        line-height: 5.5vw;
+        letter-spacing: -0.05em;
+    }
+    .text{
+        width: 70vw;
+        height: 2vw;
+        left: 7vw;
+        top: 35vw;
+        
+        font-weight:300;
+        font-size: 4.6vw;
+        line-height: 5.5vw; 
+    }
+    .bloc{
+        width: 33vw;
+        height: 6vw;
+        left: 8vw;
+        top: 42vw;
+        
+        border-radius:2vw;
+        margin-top:2vw;
+        font-weight:300;
+        font-size: 3vw;
+        line-height: 5.5vw; 
+        padding-left:2vw;
+    }
+    .text2{
+        width: 70vw;
+        height: 2vw;
+        left: 7vw;
+        top: 88vw;
+        
+        font-weight:300;
+        font-size: 4.6vw;
+        line-height: 5.5vw;        
+    }
+    .cub1{
+        display:none;
+    }
+    .cub2{
+        width:20vw;
+        height:20vw;
+        margin-left: 65.43vw;
+        margin-top: 113.43vw;
+
+    }
+    .cub3{
+
+        width:18vw;
+        height:18vw;
+        margin-left: -1.5vw;
+        margin-top: 73.43vw;
+    }
 }

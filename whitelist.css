@@ -81,6 +81,9 @@
     background: rgba(68, 63, 63, 0.5);
     border-radius: 10px;
 
+    -webkit-box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0.4vw 0.4vw rgba(0, 0, 0, 0.4);
 }
 
 .marg{
@@ -171,7 +174,9 @@
     background: #0F0F2D;
     border: 1px solid rgba(248, 198, 198, 0.2);
     border-radius: 3.5vw;
-    
+
+    box-shadow: 0px 0.4vw 17.5vw #02031E;
+
     right: 90%;
      width: 20vw;
      height: 15vh;
@@ -216,10 +221,7 @@
     padding-top: 1.3vw;
 }
 
-.bacra1:hover{
-    transform: translateX(1.2vw);
-}
-.bacra2:hover{
+.bacra:hover{
     transform: translateX(1.2vw);
 }
 a{
@@ -248,71 +250,98 @@ a{
     position: absolute;
     top: 0.8vw;
 }
-
-
-@media (max-width:370px){
-    .bacra{
-        top: 90px;
-    }
-    .bacra1{
-        top: 65px;
-    }
-    .text1{
-        position: relative;
-        top:  -3.1vw;
-    }
-    .text2{
-        position: relative;
-        top:  -3.1vw;
-    }
-}
-
-
-@media (max-width:570px){
-    .bacra{
-        top: 90px;
-    }
-    .bacra1{
-        top: 65px;
-    }
-    .text1{
-        position: relative;
-        top:  -2vw;
-    }
-    .text2{
-        position: relative;
-        top:  -2vw;
-    }
-}
-@media (max-width: 650){
-    .text1{
-        top: 35vw;
-    }
-    .text2{
-        top: 64vw;
-    }   
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1027px){
+@media (max-width: 700px){
     .obg{
+        width:92.5vw;
         height: 100%;
+        border-radius: 7vw;
+        padding-bottom: 6%;
     }
+    .information1 {
+        display: block;
+    }
+    .whitelist{
+        width: 50vw;
+        margin-top: 2vw;
+        /* margin-right: 10vw; */
+        margin-left: 17vw;
+    }
+    .fon3{
+        border-radius: 1vh;
+        padding-right: 4.4vw;
+        padding-left:1.5vw;
+        position: absolute;
+        left: 75vw;
+        top:  5vw;
+    }
+    .img4{
+        position:relative;
+        width: 6vw;
+        top: 0;
+        bottom: 0;
+        /* left:  0.1vw; */
+    }
+    .marg{
+        padding: 2%;
+        font-size: 4vw;
+        line-height: 7vw;
+    }
+
+
     .obg2{
-        height: 100%; 
-        width: 280%;   
+        width:92.5vw;
+        height: 50vw;
+        border-radius: 7vw;
+        padding-bottom: 6%;
+        padding: 2.3vw 2vw 2vw 2vw;
+        box-sizing: border-box;
+        margin-top: 0.1vw;
+        left: 3vw;
+    } 
+    .bacra{
+        border-radius: 5vw;
+        padding-left: 24vw;
+    }
+    .bacra1{
+        top: 181vw;
+        width: 77vw;
+        height: 13vw;
+        left: 11vw;
+    }
+    .bacra2{
+        top: 201vw;
+        width: 77vw;
+        height: 13vw;
+        left: 11vw;
+    }
+    .text{
+        position: relative;
+        top: 2vw;
+    }
+    .text1{
+        padding-left: 8vw;
+        font-size: 5vw;
+    }
+    .text2{
+        font-size: 5vw;
+    }
+    .textCent{
+        position: relative;
+        right: 10vw;
+    }
+    .textCent1{
+        position: relative;
+        right: 6vw;    
+    }
+    .img1{
+        top: 0.1vw;
+    }
+    .bacra:hover{
+        transform:translateX(0vw);
     }
 }
-@media (min-width: 1028px){
+
+@media (min-width: 701px){
     .obg{
         width: 40.7vw;
         height: 100%;
