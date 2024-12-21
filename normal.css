@@ -276,7 +276,6 @@ footer{
         left: 20%;
         display: block;
         
-                
     }
     .navigation{
         z-index:99999999;
@@ -293,7 +292,10 @@ footer{
         
         background: linear-gradient(330.96deg, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 78.31%);
         backdrop-filter: blur(7px);
+ 
+                
     }
+
     .plus:hover{
         width: 6.7vw;
         height: 6.7vw;  
