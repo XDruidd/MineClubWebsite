@@ -47,7 +47,7 @@ main{
     margin: 0.214vw 0;
     width: 14%;
     position: absolute;
-    left: 11.5%;
+    left: 12%;
     top: 58.5%;
 }
 .text{
@@ -311,9 +311,8 @@ main{
     .img2{
         font-size: 1.2rem;
         width: 22%;
-        left: 23.5%;
+        left: 24%;
         top: 61%;
-        background-color: white;
         border-radius: 4vw;
         padding: 0.5vw;
         
