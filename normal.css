@@ -84,7 +84,6 @@ nav>div>div>div>a>img{
     position: relative;
     bottom: 2.26vw;
     left: 3.57vw;
-    background-color: hsl(274, 69%, 38%);
     width: 5.32vw;
     height:  5.32vw;
     padding-left: 0.3vw;
@@ -92,8 +91,8 @@ nav>div>div>div>a>img{
     border-radius: 30%;
 }
 .logo>img{
-    width: 5vw;
-    height: 5vw;
+    width: 5.556vw;
+    height: 5.556vw;
 }
 html, body {
     height: 100%; /* Обеспечиваем, что body занимает всю высоту экрана */
@@ -176,7 +175,7 @@ footer{
         position:relative;
         top: 2vw;
         left: 77vw;
-        background-color: hsl(274, 69%, 38%);
+        /* background-color: hsl(274, 69%, 38%); */
         width: 11.32vw;
         height: 11.32vw;
         padding-left: 0.3vw;
