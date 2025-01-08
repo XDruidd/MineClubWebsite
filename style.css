@@ -10,11 +10,11 @@ video{
     position: absolute;
     /* width: 71vw; */
     height: 50vw;
-    transform: scale(600%, 100%);
+    transform: scale(120%, 100%);
     /* margin-left: 25vw; */
     /* top: 3.5vw;  */
     /* height: 0%; */
-    filter: blur(2vw);
+    filter: blur(4vw);
     /* border-radius: 100% ; */
 }
 .cont{
@@ -137,7 +137,12 @@ footer{
 }
 @media (max-width:700px){
     video{
-        display: none;
+        transform: rotate(90deg);
+        height: 100vw;
+        width: 180vw;
+        position: absolute;
+        left: -40vw;
+        margin-top: 10vw;
     }
     .cont{
         width:90%;
