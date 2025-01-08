@@ -138,11 +138,28 @@ main{
     margin-top: 0%;
     margin-bottom: 4%;
 }
+.line.activ2{
+    animation: 1s linear 0s 1 alternate anim;
+    margin-left: 0vw;
+    margin-right: 0vw;
+}
+@keyframes anim {
+    from {
+      /* pushes the sun down past the viewport */
+      margin-left: 11vw;
+      margin-right: 10vw;
+    }
+    to {
+      /* returns the sun to its default position */
+      margin-left: 0vw;
+      margin-right: 0vw;
+    }
+  }
 .line1{
     padding: 0px 6.6vw 0px 5vw;
     position:absolute;
     right: 32vw;
-    top: 3.1vw;
+    top: 2.6vw;
 }
 .NavObgText{
     font-size: 2vw; 
@@ -151,6 +168,7 @@ main{
     color: #fff;
     margin-left: 4.76vw;
     margin-bottom: 1.428vw;
+    /* right: 0.5vw; */
 }
 .flex {
     display: flex;
@@ -361,6 +379,21 @@ main{
         margin-bottom: 3vw;
         background-color:hsl(240, 9%, 39%);
     }
+    .none_hr.activ1{
+        animation: 1s linear 0s 1 alternate anim1;
+    }
+    @keyframes anim1 {
+        from {
+          /* pushes the sun down past the viewport */
+          margin-left: 40vw;
+          margin-right: 40vw;
+        }
+        to {
+          /* returns the sun to its default position */
+          margin-left: 16vw;
+          margin-right: 10vw;
+        }
+      }
     .icon3{
        width: 15vw;
     }
@@ -463,7 +496,7 @@ main{
     }
     .line1{
         width: 20%;
-        top: 10vw;
+        top: 8vw;
         left: -62vw;
     }
     .fon5,.fon3{

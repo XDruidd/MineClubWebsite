@@ -1,9 +1,12 @@
 body{
     background-color: #0f0f2d;
     color: white;
-    font-family: 'Inter';
-
+    font-family: 'Inter'; 
 }
+/* *::selection{
+    color: white;
+    background:#880A9C ;
+} */
 *::-webkit-scrollbar{
     -ms-overflow-style: none;
     width: 0; }
@@ -102,13 +105,11 @@ html, body {
 }
 
 footer {
-    background-color: #333;
     color: white;
     /* padding: 1rem; */
     text-align: center;
 }
 footer{
-    background-image: url(./img/cartinca_s_futera.png);
     position: relative;
     margin-top:20%;
     transform: scaleX(100%);
@@ -145,9 +146,47 @@ footer{
     color: rgba(255, 255, 255, 0.7);
     
 }
-
 #navigation{
     display: none;
+}
+.foot_line{
+    position: relative;
+    bottom: 0.8vw;
+    /* 14.8 */
+    height: 4px;
+    box-sizing: border-box;
+    
+    background: linear-gradient(330.96deg, rgba(217, 217, 217, 0.13) 0%, rgba(255, 255, 255, 0.13) 78.31%);
+    border: 1px solid rgba(217, 217, 217, 0.15);
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+    
+    margin-left: 45.8vw;
+    margin-right: 45.8vw;
+}
+.foot_line.activ{
+    animation: 1s linear 0s 1 alternate sun-rise;
+    margin-left: 14.8vw;
+    margin-right: 14.8vw;
+}
+@keyframes sun-rise {
+    from {
+      /* pushes the sun down past the viewport */
+      margin-left: 45.8vw;
+      margin-right: 45.8vw;
+    }
+    to {
+      /* returns the sun to its default position */
+      margin-left: 14.8vw;
+      margin-right: 14.8vw;
+    }
+  }
+.textW{
+    color: white;
+}
+.foot_flex{
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width:701px){
     .none_bloc{
@@ -329,4 +368,32 @@ footer{
         -webkit-text-fill-color: transparent;
         background-clip: text;
     }
+    .foot_marg{margin: 1vw;}
+    .foot_line{
+        margin-left: 3vw;
+        margin-right: 3vw;
+        margin-bottom: 4vw;
+    }
+    .foot_line.activ{
+        animation: 1s linear 0s 1 alternate sun;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    @keyframes sun {
+        from {
+          /* pushes the sun down past the viewport */
+          margin-left: 45.8vw;
+          margin-right: 45.8vw;
+        }
+        to {
+          /* returns the sun to its default position */
+          margin-left: 3vw;
+          margin-right: 3vw;
+        }
+      }
+    .svop1{order: 1;}
+    .svop2{order: 0;}
+}
+@media (max-width:345px){
+    footer{margin-top: 68%;}
 }

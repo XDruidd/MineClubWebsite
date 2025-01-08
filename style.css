@@ -8,12 +8,14 @@
 }
 video{
     position: absolute;
-    width: 50vw;
-    margin-left: 25vw;
+    /* width: 71vw; */
+    height: 50vw;
+    transform: scale(600%, 100%);
+    /* margin-left: 25vw; */
     /* top: 3.5vw;  */
     /* height: 0%; */
-    filter: blur(3vw);
-    border-radius: 100% ;
+    filter: blur(2vw);
+    /* border-radius: 100% ; */
 }
 .cont{
     box-sizing: border-box;
@@ -131,8 +133,12 @@ h3{
 }
 footer{
     margin-top: 15.9vw;
+    background-color: #0F0F2D;
 }
 @media (max-width:700px){
+    video{
+        display: none;
+    }
     .cont{
         width:90%;
         height:120vw;
