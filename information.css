@@ -139,7 +139,7 @@ main{
     margin-bottom: 4%;
 }
 .line.activ2{
-    animation: 1s linear 0s 1 alternate anim;
+    animation: 0.5s linear 0s 1 alternate anim;
     margin-left: 0vw;
     margin-right: 0vw;
 }
@@ -380,7 +380,7 @@ main{
         background-color:hsl(240, 9%, 39%);
     }
     .none_hr.activ1{
-        animation: 1s linear 0s 1 alternate anim1;
+        animation: 0.5s linear 0s 1 alternate anim1;
     }
     @keyframes anim1 {
         from {

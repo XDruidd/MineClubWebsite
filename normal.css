@@ -165,7 +165,7 @@ footer{
     margin-right: 45.8vw;
 }
 .foot_line.activ{
-    animation: 1s linear 0s 1 alternate sun-rise;
+    animation: 0.5s linear 0s 1 alternate sun-rise;
     margin-left: 14.8vw;
     margin-right: 14.8vw;
 }
@@ -375,7 +375,7 @@ footer{
         margin-bottom: 4vw;
     }
     .foot_line.activ{
-        animation: 1s linear 0s 1 alternate sun;
+        animation: 0.5s linear 0s 1 alternate sun;
         margin-left: 3vw;
         margin-right: 3vw;
     }
