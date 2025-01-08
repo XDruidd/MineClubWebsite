@@ -14,7 +14,6 @@ video{
     /* margin-left: 25vw; */
     /* top: 3.5vw;  */
     /* height: 0%; */
-    filter: blur(4vw);
     /* border-radius: 100% ; */
 }
 .cont{
@@ -135,6 +134,11 @@ footer{
     margin-top: 15.9vw;
     background-color: #0F0F2D;
 }
+@media (min-width:701px){
+    video{
+        filter: blur(4vw);
+    }
+}
 @media (max-width:700px){
     video{
         transform: rotate(90deg);
@@ -143,6 +147,7 @@ footer{
         position: absolute;
         left: -40vw;
         margin-top: 10vw;
+        filter: blur(9vw);
     }
     .cont{
         width:90%;
