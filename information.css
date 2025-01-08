@@ -258,7 +258,7 @@ main{
 .fon5{
     padding-right: 10.5%;
     position: relative;
-    right: 2.8vw;   
+    /* right: 2.8vw;    */
     margin-right: 0%;
     padding-top: 0.4vw;
 }
@@ -266,8 +266,7 @@ main{
     width: 3vw;
     height: 3vw;
     position: relative;
-    left: 52%;
-    
+    left: 55%;
 }
 .RGB2{
     background: linear-gradient(270.07deg, #FFFFFF 0.06%, #8A1DC9 99.94%);
@@ -388,7 +387,7 @@ main{
     .img5, .img3{
         width: 8vw;
         height: 8vw;
-        left: 1vw;
+        left: 0.6vw;
     }
     .fon5,.fon3{
         border-radius: 2vw;
@@ -466,7 +465,10 @@ main{
         width: 20%;
         top: 10vw;
         left: -62vw;
-        
+    }
+    .fon5,.fon3{
+        position: relative;
+        right: 2.8vw;   
     }
 }
 @media (min-width: 701px){
