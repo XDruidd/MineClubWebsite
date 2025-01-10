@@ -93,7 +93,7 @@ nav>div>div>div>a>img{
     padding-top: 0.354vw;
     border-radius: 30%;
 }
-.logo>img{
+.logo>a>img{
     width: 5.556vw;
     height: 5.556vw;
 }
@@ -221,7 +221,7 @@ footer{
         padding-top: 0.354vw;
         border-radius: 30%;
     }
-    .logo>img {
+    .logo>a>img {
         width: 11vw;
         height: 11vw;
     }
