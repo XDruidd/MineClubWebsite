@@ -44,7 +44,7 @@ main{
 }
 .img2{
     font-size: 1.2rem; 
-    margin: 0.214vw 0;
+    margin: 0.214lw 0;
     width: 14%;
     position: absolute;
     left: 12%;
@@ -65,7 +65,12 @@ main{
     position: relative;
     /* padding-bottom: 1.814vw; */
 }
-
+.cont2>.text{
+    font-size: 1.5vw;
+}
+.cont2>.text1{
+    font-size: 1.8vw;
+}
 .cont1{
     position:absolute;
     top:1.5%;
@@ -73,8 +78,8 @@ main{
 }
 .cont2{
     position: absolute;
-    top:22.5%;
-    left:34%;
+    top:23.5%;
+    left:30%;
 }
 
 .box{
@@ -146,8 +151,8 @@ main{
 @keyframes anim {
     from {
       /* pushes the sun down past the viewport */
-      margin-left: 11vw;
-      margin-right: 10vw;
+      margin-left: 8vw;
+      margin-right: 7vw;
     }
     to {
       /* returns the sun to its default position */
@@ -502,6 +507,20 @@ main{
     .fon5,.fon3{
         position: relative;
         right: 2.8vw;   
+    }
+    .cont2>.text{
+        font-size: 2.8vw;
+    }
+    .cont2>.text1{
+        font-size: 3.8vw;
+    }
+    .cont1{
+        top:4.5%;
+        left: 7%;
+    }
+    .cont2{
+        left: 46vw;
+        top: 19vw;
     }
 }
 @media (min-width: 701px){

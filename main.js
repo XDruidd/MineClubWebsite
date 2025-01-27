@@ -27,36 +27,56 @@ const scrollController = {
   };
   
 clic.onclick = () => {
-    if(navigation.style.display == "block"){    
-        navigation.style.display = "none";
-        animation.animate([
-            { opacity: 1, transform: 'scale(1)' },
-            { opacity: 0, transform: 'scale(0.9)' }
-        ], {
-            duration: 300,
-            easing: 'ease'
-        }).onfinish = () => {
-            animation.style.display = 'none';
-        };
-    }
-    else{
-        navigation.style.opacity = 1; 
+    animation.style.opacity = 1;
+    navigation.style.opacity = 1;
+
+    // Если меню скрыто
+    if (navigation.style.display === "none" || !navigation.style.display) {
+        // Заблокировать скролл
+        document.body.style.overflow = "hidden";
+
+        // Показать фон и анимацию
         navigation.style.display = "block";
-        animation.animate([
-            { opacity: 0, transform: 'scale(0.9)' },
-            { opacity: 1, transform: 'scale(1)' }
-        ],
-        scrollController.disabledScroll()
-        ,{
-            duration: 300,
-            easing: 'ease'
-        });
+        animation.style.display = "block";
+
+        // Установить начальные стили
+        animation.style.opacity = 0;
+        animation.style.transform = "scale(0.8)";
+        animation.style.transition = "opacity 0.3s ease, transform 0.5s ease";
+
+        setTimeout(() => {
+            // Анимация появления
+            animation.style.opacity = 1;
+            animation.style.transform = "scale(1)";
+        }, 0);
+    } else {
+        // Анимация скрытия
+        animation.style.transition = "opacity 0.3s ease, transform 0.5s ease";
+        animation.style.opacity = 0;
+        animation.style.transform = "scale(0.8)";
+
+        setTimeout(() => {
+            // Скрыть элементы после завершения анимации
+            animation.style.display = "none";
+            navigation.style.display = "none";
+
+            // Разблокировать скролл
+            document.body.style.overflow = "auto";
+
+            // Сбрасываем стили, чтобы не "прятать" элементы
+            animation.style.opacity = 1;
+            animation.style.transform = "scale(1)";
+        }, 300);
     }
 
-    setTimeout(()=>{
-      nav_fon.classList.toggle("one-showed")
-    }, 0)
-}
+    // Обновить состояние класса для фона
+    setTimeout(() => {
+        nav_fon.classList.toggle("one-showed");
+    }, 0);
+};
+
+
+
 clic1.onclick = () => {
     if(navigation.style.display == "block"){
         

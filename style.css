@@ -138,6 +138,10 @@ footer{
     video{
         filter: blur(4vw);
     }
+    .footer{
+        position: relative;
+        top:30vh;
+    }
 }
 @media (max-width:700px){
     video{
