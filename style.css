@@ -7,14 +7,16 @@
 
 }
 video{
+    z-index: -1;    
     position: absolute;
-    /* width: 71vw; */
-    height: 50vw;
-    transform: scale(120%, 100%);
+    /* width: 60vw; */
+    height: 51.1vw;
+    transform: scale(120%, 140%);
     /* margin-left: 25vw; */
     /* top: 3.5vw;  */
     /* height: 0%; */
     /* border-radius: 100% ; */
+    padding-bottom: 2vw;
 }
 .cont{
     box-sizing: border-box;
@@ -147,7 +149,7 @@ footer{
     video{
         transform: rotate(90deg);
         height: 100vw;
-        width: 180vw;
+        width: 178vw;
         position: absolute;
         left: -40vw;
         margin-top: 10vw;
